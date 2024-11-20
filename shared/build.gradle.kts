@@ -14,7 +14,6 @@ var androidTarget: String = ""
 
 kotlin {
     val android = android {
-        publishLibraryVariants("release")
     }
     androidTarget = android.name
     val xcf = XCFramework()
