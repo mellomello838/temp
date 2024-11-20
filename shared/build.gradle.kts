@@ -205,7 +205,6 @@ tasks.named("podPublishReleaseXCFramework") {
 val publishPlatforms by tasks.registering {
     group = "myGroup"
     dependsOn(
-        tasks.named("publishAndroidReleasePublicationToGithubRepository"),
         tasks.named("podPublishReleaseXCFramework")
     )
     doLast {
